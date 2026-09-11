@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>SAFE SCHOOL - Section 2</title>
+
+  <style>
+
+    /* ===============================
+       RESET
+    =============================== */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+
+      width: 100%;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #ffffff;
+
+      overflow-x: hidden;
+    }
+
+
+    /* ===============================
+       SECTION 2
+    =============================== */
+
+    .section2-banner {
+      position: relative;
+
+      width: 100%;
+      max-width: 1800px;
+
+      margin: 0 auto;
+
+      overflow: hidden;
+
+      background: #eef9fb;
+    }
+
+
+    /* GIỮ NGUYÊN TỶ LỆ ẢNH */
+
+    .section2-image {
+      display: block;
+
+      width: 100%;
+      height: auto;
+    }
+
+
+    /* ===============================
+       BUTTON CONTAINER
+    =============================== */
+
+    .section2-actions {
+      position: absolute;
+
+      /*
+        Nút nằm dưới paragraph
+        và phía trên 3 icon
+      */
+
+      left: 7.2%;
+      top: 68%;
+
+      display: flex;
+      align-items: center;
+
+      gap: 16px;
+
+      z-index: 20;
+    }
+
+
+    /* ===============================
+       BUTTON COMMON
+    =============================== */
+
+    .section2-btn {
+      height:
+        clamp(36px, 3.8vw, 56px);
+
+      padding:
+        0 clamp(13px, 1.5vw, 25px);
+
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 9px;
+
+      border-radius: 999px;
+
+      text-decoration: none;
+
+      white-space: nowrap;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size:
+        clamp(8px, .95vw, 15px);
+
+      font-weight: 800;
+
+      line-height: 1;
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+    }
+
+
+    /* ===============================
+       REPORT BUTTON
+    =============================== */
+
+    .section2-btn-report {
+      min-width:
+        clamp(170px, 19vw, 275px);
+
+      color: #ffffff;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0fa3a3,
+          #078d89
+        );
+
+      border:
+        2px solid #0fa3a3;
+
+      box-shadow:
+        0 8px 20px
+        rgba(15, 163, 163, .22);
+    }
+
+
+    /* ===============================
+       HELP BUTTON
+    =============================== */
+
+    .section2-btn-help {
+      min-width:
+        clamp(130px, 14vw, 205px);
+
+      color: #102b5a;
+
+      background:
+        rgba(255, 255, 255, .97);
+
+      border:
+        2px solid #102b5a;
+
+      box-shadow:
+        0 8px 20px
+        rgba(18, 53, 91, .08);
+    }
+
+
+    /* ===============================
+       ICON
+    =============================== */
+
+    .btn-icon {
+      font-size: 1.1em;
+      line-height: 1;
+    }
+
+    .btn-arrow {
+      font-size: 1.1em;
+      line-height: 1;
+    }
+
+
+    /* ===============================
+       HOVER
+    =============================== */
+
+    .section2-btn:hover {
+      transform:
+        translateY(-3px);
+
+      box-shadow:
+        0 12px 26px
+        rgba(18, 53, 91, .18);
+    }
+
+    .section2-btn-report:hover {
+      background: #078d89;
+    }
+
+    .section2-btn-help:hover {
+      background: #f7fbfc;
+    }
+
+
+    /* ===============================
+       TABLET
+    =============================== */
+
+    @media (max-width: 1000px) {
+
+      .section2-actions {
+        left: 7%;
+        top: 68%;
+
+        gap: 10px;
+      }
+
+      .section2-btn {
+        border-width: 1.5px;
+      }
+
+    }
+
+
+    /* ===============================
+       MOBILE
+    =============================== */
+
+    @media (max-width: 600px) {
+
+      .section2-actions {
+        left: 6.8%;
+        top: 67.5%;
+
+        gap: 5px;
+      }
+
+      .section2-btn {
+        height: 24px;
+
+        padding:
+          0 7px;
+
+        gap: 3px;
+
+        font-size: 6px;
+
+        border-width: 1px;
+      }
+
+      .section2-btn-report {
+        min-width: 110px;
+      }
+
+      .section2-btn-help {
+        min-width: 85px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <section class="section2-banner">
+
+    <!--
+      Nếu index.html nằm ở:
+
+      safe-school/
+      ├── home/
+      │   └── section 2/
+      │       └── index.html
+      │
+      └── images/
+          └── NỀN/
+              └── 2.png
+
+      thì đường dẫn đúng là:
+      ../../images/NỀN/2.png
+    -->
+
+
+    <img
+      src="C:\Users\ADMIN\Desktop\WEB IUCP\safe-school\images\NỀN\2.png"
+      alt="You do not have to stay silent"
+      class="section2-image"
+    >
+
+
+    <!-- REAL CLICKABLE BUTTONS -->
+
+    <div class="section2-actions">
+
+
+      <!-- REPORT -->
+
+      <a
+        href="YOUR-GOOGLE-SITES-REPORT-URL"
+        target="_top"
+        class="section2-btn section2-btn-report"
+      >
+
+        <span class="btn-icon">
+          ✈
+        </span>
+
+        <span>
+          REPORT AN INCIDENT
+        </span>
+
+        <span class="btn-arrow">
+          →
+        </span>
+
+      </a>
+
+
+      <!-- GET HELP -->
+
+      <a
+        href="YOUR-GOOGLE-SITES-GET-HELP-URL"
+        target="_top"
+        class="section2-btn section2-btn-help"
+      >
+
+        <span class="btn-icon">
+          ♥
+        </span>
+
+        <span>
+          I NEED HELP
+        </span>
+
+        <span class="btn-arrow">
+          →
+        </span>
+
+      </a>
+
+
+    </div>
+
+
+  </section>
+
+
+</body>
+
+</html>
