@@ -281,7 +281,342 @@
   <section class="section2-banner">
 
     <img
-      src="1.png"
+      src="2<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAFE SCHOOL - Section 4</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fcfc;
+      color: #10233f;
+    }
+
+    .section4 {
+      position: relative;
+      padding: 70px 0 85px;
+      background: linear-gradient(180deg, #eef8fa 0%, #f8fcfc 100%);
+      overflow: hidden;
+    }
+
+    .section4::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(15, 163, 163, 0.06);
+    }
+
+    .section4::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      right: -80px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(15, 163, 163, 0.05);
+    }
+
+    .section4 .container {
+      width: min(1400px, 94%);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 44px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: #0a9697;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: "";
+      width: 42px;
+      height: 2px;
+      background: #0fa3a3;
+      border-radius: 999px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 14px;
+      color: #081a4b;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.15;
+      font-weight: 800;
+    }
+
+    .section-heading p {
+      margin: 0 auto;
+      max-width: 760px;
+      color: #6c7f96;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* GRID */
+    .violence-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    /* CARD */
+    .violence-card {
+      background: #ffffff;
+      border: 1px solid #cfe5e8;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(16, 35, 63, 0.06);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .violence-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(15, 163, 163, 0.45);
+      box-shadow: 0 16px 34px rgba(16, 35, 63, 0.12);
+    }
+
+    /* ẢNH CÙNG TỶ LỆ */
+    .violence-image-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1.28;
+      overflow: hidden;
+      background: #f3f8f9;
+      flex-shrink: 0;
+    }
+
+    .violence-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* CONTENT */
+    .violence-content {
+      padding: 22px 20px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .violence-content h3 {
+      margin: 0 0 14px;
+      color: #0a2453;
+      font-size: 17px;
+      line-height: 1.35;
+      font-weight: 800;
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .violence-content p {
+      margin: 0;
+      color: #667b92;
+      font-size: 15px;
+      line-height: 1.7;
+      flex-grow: 1;
+    }
+
+    .section-action {
+      text-align: center;
+      margin-top: 38px;
+    }
+
+    .learn-more-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 50px;
+      padding: 0 28px;
+      border-radius: 999px;
+      border: 2px solid #0fa3a3;
+      background: #ffffff;
+      color: #078d89;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      transition: all .2s ease;
+    }
+
+    .learn-more-btn:hover {
+      background: #0fa3a3;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1300px) {
+      .violence-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .violence-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .section4 {
+        padding: 56px 0 70px;
+      }
+
+      .section-heading {
+        margin-bottom: 30px;
+      }
+
+      .section-heading p {
+        font-size: 15px;
+      }
+
+      .violence-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .violence-card {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .violence-content h3 {
+        min-height: auto;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section4">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Recognize school violence</div>
+        <h2>School violence can take many forms.</h2>
+        <p>
+          School violence is not always easy to recognize.
+          It may appear physically, emotionally, socially, sexually,
+          or through online spaces.
+        </p>
+      </div>
+
+      <div class="violence-grid">
+
+        <!-- CARD 1 -->
+        <div class="violence-card">
+          <div class="violence-image-wrap">
+            <img src="../../images/5.png" alt="Physical Violence">
+          </div>
+          <div class="violence-content">
+            <h3>Physical Violence</h3>
+            <p>
+              Hitting, kicking, pushing, fighting, or intentionally causing physical injury.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="violence-card">
+          <div class="violence-image-wrap">
+            <img src="../../images/6.png" alt="Psychological Violence">
+          </div>
+          <div class="violence-content">
+            <h3>Psychological Violence</h3>
+            <p>
+              Threatening, humiliating, isolating, spreading rumors, or causing emotional distress.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="violence-card">
+          <div class="violence-image-wrap">
+            <img src="../../images/7.png" alt="Sexual Violence">
+          </div>
+          <div class="violence-content">
+            <h3>Sexual Violence</h3>
+            <p>
+              Unwanted sexual behavior that violates someone’s boundaries, dignity, or safety.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="violence-card">
+          <div class="violence-image-wrap">
+            <img src="../../images/8.png" alt="Bullying">
+          </div>
+          <div class="violence-content">
+            <h3>Bullying</h3>
+            <p>
+              Repeated harmful behavior, especially when there is an imbalance of power.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="violence-card">
+          <div class="violence-image-wrap">
+            <img src="../../images/9.png" alt="Cyberbullying">
+          </div>
+          <div class="violence-content">
+            <h3>Cyberbullying</h3>
+            <p>
+              Using messages, images, social media, or online platforms to harass, threaten, or shame someone.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-action">
+        <a href="YOUR-GOOGLE-SITES-RECOGNIZE-URL" target="_top" class="learn-more-btn">
+          Learn more about the signs →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>.png"
       alt="You do not have to stay silent"
       class="section2-image"
     >
